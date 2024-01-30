@@ -47,14 +47,14 @@ python autoskipad.py
 
 ## Use Cases
 
-- **Ad Skipping:**
+**Ad Skipping:**
 - The primary use case is to automatically skip ads during YouTube video playback.
 - This can be useful for users who want a seamless viewing experience without interruptions.
 
-- **Automation Testing:**
+**Automation Testing:**
 - The script can serve as a starting point for Selenium-based automation testing of web applications with similar ad elements.
 
-- **Learning Selenium:**
+**Learning Selenium:**
 - Developers and testers can use this script as a practical example to understand Selenium scripting for web automation.
 
 ## Author
