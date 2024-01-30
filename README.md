@@ -61,8 +61,8 @@ python autoskipad.py
 ## Author
 
 - **Author Name:** Hammad Tariq
-- **Contact:** hammadt451@gmail.com
-- **GitHub:** hamad-tariq
+- **Contact:** Email at [hammadt451@gmail.com](mailto:hammadt451@gmail.com)
+- **GitHub:** [hamad-tariq](https://github.com/hamad-tariq)
 
 Feel free to contribute, report issues, or suggest improvements! Happy ad skipping!
 
