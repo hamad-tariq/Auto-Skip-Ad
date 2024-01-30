@@ -24,15 +24,16 @@ This Python script leverages Selenium to automatically skip ads on YouTube. It i
 ## Installation Guide
 
 1. **Clone the Repository:**
-
+```bash
 git clone https://github.com/your-username/YouTube-Ad-Skipper.git
 
 cd YouTube-Ad-Skipper
+```
 
 2. **Install Dependencies:**
-
+```bash
 pip install -r requirements.txt
-
+```
 
 3. **Configure ChromeDriver:**
 
@@ -41,9 +42,9 @@ pip install -r requirements.txt
 - Place the executable in the `driver` directory.
 
 4. **Run the Script:**
- 
+ ```bash
 python autoskipad.py
-
+```
 
 ## Use Cases
 
