@@ -2,52 +2,69 @@
 
 from tkinter import *
 from tkinter import messagebox
+import tkinter
 import webbrowser
 
 window=Tk()
 window.title("Auto Skip Ad")
-window.geometry("500x500")
+window.geometry("1000x800")
 window.configure(bg="black")
 
 url="https://github.com/hamad-tariq/Auto-Skip-Ad"
+
+frame= tkinter.Frame(bg="black")
 
 def start():
     messagebox.showinfo("Auto Skip Ad","Auto Skip Ad Started")
     import autoskipad
 
+
 def stop():
-    messagebox.showinfo("Auto Skip Ad","Auto Skip Ad Stopped")
-    window.destroy()
+    messagebox.showinfo("Auto Skip Ad","Auto Skip Ad Stopped Successfully. Give a Feedback on Github.")
+
+def gthub():
+    webbrowser.open(url)
+
+def lnkdin():
+    lk="https://www.linkedin.com/in/hammad-tariq-269623207/"
+    webbrowser.open(lk)
 
 def about():
-    messagebox.showinfo("Auto Skip Ad",f"""Auto Skip Ad is a python script that automatically skips the youtube ads. \n It is a free and open source software developed by Hammad Tariq. Published on 1st February 2024. \n For more information visit our github page: {url}                    
-                        """)
+    webbrowser.open(url)
 
 def help():
-    messagebox.showinfo("Auto Skip Ad","If you are facing any problem contact us at: \n hammadt451@gmail.com")
+    webbrowser.open(url)
 
 def contact():
-    messagebox.showinfo("Auto Skip Ad","Contact us at: \n hammadt451@gmail.com")
+    lntree="https://linktr.ee/hamadtariq"
+    webbrowser.open(lntree)
 
 def exit():
     messagebox.showinfo("Auto Skip Ad","Thank you for using Auto Skip Ad")
     window.destroy()
 
 def main():
-    l1=Label(window,text="Auto Skip Ad",font=("Arial Bold",30),bg="black",fg="white")
-    l1.place(x=100,y=50)
-    b1=Button(window,text="Ad Free Youtube",font=("Arial Bold",15),bg="black",fg="white",command=start)
-    b1.place(x=100,y=200)
-    b2=Button(window,text="Stop Ad Blocker",font=("Arial Bold",15),bg="black",fg="white",command=stop)
-    b2.place(x=300,y=200)
-    b3=Button(window,text="About",font=("Arial Bold",15),bg="black",fg="white",command=about)
-    b3.place(x=100,y=300)
-    b4=Button(window,text="Help",font=("Arial Bold",15),bg="black",fg="white",command=help)
-    b4.place(x=300,y=300)
-    b5=Button(window,text="Contact",font=("Arial Bold",15),bg="black",fg="white",command=contact)
-    b5.place(x=100,y=400)
-    b6=Button(window,text="Exit",font=("Arial Bold",15),bg="black",fg="white",command=exit)
-    b6.place(x=300,y=400)
+    l1=Label(frame,text="Auto Skip Ad",font=("Candara",30),bg="black",fg="white")
+    l1.grid(row=0,column=0,columnspan=5,pady=40)
+    b1=Button(frame,text="Ad Free Youtube",font=("Candara",15),bg="black",fg="white",command=start)
+    b1.grid(row=1,column=1,padx=30, pady=40)
+    b2=Button(frame,text="Stop Ad Blocker",font=("Candara",15),bg="black",fg="white",command=stop)
+    b2.grid(row=1,column=2,padx=30,pady=40)
+    b3=Button(frame,text="About the tool",font=("Candara",15),bg="black",fg="white",command=about)
+    b3.grid(row=1,column=3,padx=30,pady=40)
+    b4=Button(frame,text="User Guide",font=("Candara",15),bg="black",fg="white",command=help)
+    b4.grid(row=1,column=4,padx=30,pady=40)
+    b5=Button(frame,text="Contact",font=("Candara",15),bg="black",fg="white",command=contact)
+    b5.grid(row=2,column=2,pady=40)
+    b6=Button(frame,text="Exit",font=("Candara",15),bg="black",fg="white",command=exit)
+    b6.grid(row=2,column=3,pady=40)
+    l2=Label(frame,text="Developed by Hammad Tariq",font=("Candara",18),bg="black",fg="white")
+    l2.grid(row=4,column=0,columnspan=5,pady=20)
+    b7=Button(frame,text="Github",font=("Candara",15),bg="black",fg="white",command=gthub)
+    b7.grid(row=5,column=2,pady=40)
+    b8=Button(frame,text="LinkedIn",font=("Candara",15),bg="black",fg="white",command=lnkdin)
+    b8.grid(row=5,column=3,pady=40)
+    frame.pack(expand=True)
     window.mainloop()
 
 if __name__=="__main__":
