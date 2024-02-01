@@ -64,6 +64,6 @@ python gui.py
 
 Feel free to contribute, report issues, or suggest improvements! Happy ad skipping!
 
-## [Download exe](https://drive.google.com/file/d/1nENy9fmXELdsjsQXsQlj7wohP4oX5_6l/view?usp=sharing)
+## [Download here](https://drive.google.com/file/d/1nENy9fmXELdsjsQXsQlj7wohP4oX5_6l/view?usp=sharing)
 
 
